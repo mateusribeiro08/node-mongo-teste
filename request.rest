@@ -1,0 +1,31 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+  "name": "Algum serviço",
+  "description": "Alguma descrição",
+  "price": 1400,
+  "image": "https://unsplash.com/pt-br/fotografias/g5jpH62pwes"
+}
+
+
+###
+GET http://localhost:3000/api/services
+
+###
+
+GET http://localhost:3000/api/services/6436d2a12f752e6ada2720d4
+
+###
+DELETE http://localhost:3000/api/services/6436d2a12f752e6ada2720d4
+
+###
+PUT http://localhost:3000/api/services/6436d5962dadd197fa7fb063
+Content-Type: application/json
+
+{
+  "name": "Teste Atualização",
+  "description": "Alguma descrição",
+  "price": 2000,
+  "image": "https://unsplash.com/pt-br/fotografias/g5jpH62pwes"
+}
